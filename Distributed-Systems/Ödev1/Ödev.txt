@@ -1,0 +1,32 @@
+Dağıtık Sistemlerde verdiğim ödevin detayları:
+
+Bu ödevde, Docker teknolojisi kullanılarak bir dağıtık sistem mimarisi oluşturulacaktır. 
+Mimaride, bir adet Nginx sunucusu, iki adet replikasyonlu Spring Boot uygulama sunucusu, 
+bir PostgreSQL veritabanı sunucusu ve bir Redis cache sunucusu yer alacaktır.
+
+Mimari Tasarım
+
+Nginx: Yük dengeleyici olarak kullanılacak ve gelen istekleri Spring Boot uygulama sunucularına yönlendirecektir.
+Spring Boot Uygulamaları: İki adet olacak ve replikasyon ile yüksek erişilebilirlik sağlanacaktır.
+PostgreSQL: Veritabanı olarak kullanılacak ve uygulamaların verilerini saklayacaktır.
+Redis: Cache sunucusu olarak kullanılacak ve uygulamanın performansını artıracaktır.
+Uygulama Detayları
+
+Docker Compose: Tüm servisler, Docker Compose ile tanımlanacaktır. Nginx, Spring Boot uygulamaları, 
+PostgreSQL ve Redis container'ları oluşturulacak ve birbirleriyle iletişimleri sağlanacaktır. 
+Replikasyon yapabilmek için uygulama sunucusu için ayrıca bir dockerfile yapmanız gerekecek.
+Failover Yapılandırması: Bir uygulama sunucusu devre dışı kaldığında, 
+Nginx diğer uygulama sunucusuna istekleri yönlendirecek şekilde yapılandırılacaktır.
+
+Dağıtık Sistem ödevi ile ilgili güncelleme:
+
+Ödevi Github'a yükleyin. ayrıca bir tanıtım videosu yapacaksınız. 
+Tanıtım videosunda dağıtık sistemi nasıl oluşturduğunuzu adım adım anlatın. 
+docker compose yapısını, nginx.conf, ve dockerfile dosyasını nasıl yapılandırdığınızı detaylıca anlatın. 
+Ayrıca videoda sistem çalışırken app node lardan birini kapatın. 
+Eğer sistem devam ediyorsa sıkıntı yok. 
+Sonra kapattığınızı açıp diğerini kapatın. sistem yine çalışıyorsa tamamdır. 
+Oluşturduğunuz video kısa olsun. 
+Bu videoyu da githubda aynı proje içine ekleyin.
+
+Github linkini daha sonra Çetin Erçelik hocanızın oluşturacağı e-tabloya atacaksınız.

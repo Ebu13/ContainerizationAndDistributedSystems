@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="jakarta.faces.core">
+    <h:head>
+        <title>Ana Sayfa</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    </h:head>
+    <h:body>
+        <div class="container mt-5">
+            <h:form>
+                <div class="form-group">
+                    <h:outputLabel id="nameLabel" value="Name" for="nameText" styleClass="col-form-label"/>
+                    <h:inputText id="nameText" value="#{userInfoBean.name}" styleClass="form-control"/>
+                </div>
+                <div class="form-group">
+                    <h:outputLabel id="addressLabel" value="Address" for="addressText" styleClass="col-form-label"/>
+                    <h:inputText id="addressText" value="#{userInfoBean.address}" styleClass="form-control"/>
+                </div>
+                <div class="form-group">
+                    <h:outputLabel id="emailLabel" value="Email" for="emailText" styleClass="col-form-label"/>
+                    <h:inputText id="emailText" value="#{userInfoBean.email}" styleClass="form-control"/>
+                </div>
+                <div class="form-group">
+                    <h:outputLabel id="phoneLabel" value="Phone" for="phoneText" styleClass="col-form-label"/>
+                    <h:inputText id="phoneText" value="#{userInfoBean.phone}" styleClass="form-control"/>
+                </div>
+                <h:commandButton value="Send" styleClass="btn btn-primary" action="ok"/>
+            </h:form>
+        </div>
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </h:body>
+</html>

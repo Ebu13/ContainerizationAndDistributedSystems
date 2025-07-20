@@ -1,0 +1,8 @@
+Dağıtık Sistemler dersinde pratike edebilmek adına aşağıdaki sunucuya ssh ile bağlanarak uygulama yapabilirsiniz.
+
+Host: 172.16.0.185
+User: dsuser
+Pass: dsuser44
+
+Not: /home/dsuser dizini içerisinde erişim yetkiniz bulunmaktadır. 
+Bir de sunucuya ssh ile bağlanmak için Inet ağında olmanız gerekiyor.

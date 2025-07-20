@@ -1,0 +1,19 @@
+Merhabalar,
+
+Geçen hafta verdiğim ödevin detayları:
+Docker kullanarak birden fazla düğüm içeren bir dağıtık sistem kuracak ve bir veri seti OpenMP 
+ve MPI ile işlenecektir.
+Docker Compose ile birden fazla konteyner çalıştırarak bir dağıtık hesaplama ortamı oluşturacak 
+ve veri kümesi paralel olarak işlenecektir.
+
+- Docker kullanarak birden fazla düğümlü dağıtık mimari kurulacak.
+- MPI ile düğümler arasında büyük veri paylaşımı yapılacak.
+- OpenMP ile her düğüm kendi içinde çok çekirdekli paralel işlem yapacak.
+- Veri işleme için farklı düğümlerde parçalı hesaplama yapılacak.
+
+Ödev Teslimi
+
+- Ödevler GitHub'a atılacak (Dockerfile veya Docker Compose dosyası içerecek)
+- MPI ve OpenMP kodlarıda GitHub'da olacak
+- Kodların nasıl çalıştırılacağını açıklayan bir YouTube videosu linki readme dosyası içinde olacak.
+- MPI ve OpenMP'nin performans farklarını karşılaştıran kısa bir rapor readme dosyasına eklenecek.

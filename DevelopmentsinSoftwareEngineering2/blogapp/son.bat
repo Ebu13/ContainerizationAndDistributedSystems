@@ -1,0 +1,1 @@
+docker run -p 4444:80 --name myblogapp blogappjdk

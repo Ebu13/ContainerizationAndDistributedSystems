@@ -1,0 +1,2 @@
+# DevelopmentsinSoftwareEngineering2
+Yazılım Mühendisliğindeki Gelişmeler 2 Dersi
